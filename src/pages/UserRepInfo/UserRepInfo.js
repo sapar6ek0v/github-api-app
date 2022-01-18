@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {useParams} from "react-router-dom";
-import ReactMarkdown from 'react-markdown'
 import './user-rep.css'
-import notFound from '../../img/not-found.png'
 import Repositories from "../../components/Repositories/Repositories";
 import {Plane} from "react-loader-spinner";
 

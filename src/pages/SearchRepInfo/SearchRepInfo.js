@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import {Link, useParams} from "react-router-dom";
-import {Container, Row} from "react-bootstrap";
+import {useParams} from "react-router-dom";
+import {Container} from "react-bootstrap";
 import {
     CSSTransition,
     TransitionGroup,
