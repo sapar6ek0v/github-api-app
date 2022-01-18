@@ -8,21 +8,25 @@ import Header from "./components/Header/Header";
 import SearchUser from "./components/SearchUser/SearchUser";
 import SearchRep from "./components/SearchRep/SearchRep";
 import SearchRepInfo from "./pages/SearchRepInfo/SearchRepInfo";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
-        <>
-            <Header />
-            <Routes>
-                <Route path={'/'} element={<Main/>}/>
-                <Route path={`/search/:name`} element={<UsersPage/>}/>
-                <Route path={`/user-info/:name`} element={<UserInfo/>}/>
-                <Route path={`/user-repositories/:name/:title`} element={<UserRepInfo />} />
-                <Route path={`/search-user`} element={<SearchUser/>} />
-                <Route path={`/search-rep`} element={<SearchRep/>} />
-                <Route path={`/search-rep-info/:repos`} element={<SearchRepInfo/>} />
-            </Routes>
-        </>
+        <div className='main-block'>
+                <Header />
+                <div className='main-sub-block'>
+                    <Routes>
+                        <Route path={'/'} element={<Main/>}/>
+                        <Route path={`/search/:name`} element={<UsersPage/>}/>
+                        <Route path={`/user-info/:name`} element={<UserInfo/>}/>
+                        <Route path={`/user-repositories/:name/:title`} element={<UserRepInfo />} />
+                        <Route path={`/search-user`} element={<SearchUser/>} />
+                        <Route path={`/search-rep`} element={<SearchRep/>} />
+                        <Route path={`/search-rep-info/:repos`} element={<SearchRepInfo/>} />
+                    </Routes>
+                </div>
+            <Footer />
+        </div>
     );
 }
 

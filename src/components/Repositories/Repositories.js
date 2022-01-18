@@ -7,7 +7,8 @@ const Repositories = ({userRepInfo, readmeMd, lang }) => {
     return (
         <div  className='user-rep-page'>
             <div className='d-flex justify-content-between'>
-                <div className=' user-rep-title'>{userRepInfo.full_name}</div><span className='user-rep-visibility'> {userRepInfo.visibility}</span>
+                <div className=' user-rep-title'>{userRepInfo.full_name}</div>
+                <span className='user-rep-visibility'> {userRepInfo.visibility}</span>
             </div>
             <div className='row'>
                 <div className='col-8'>

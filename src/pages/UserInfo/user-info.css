@@ -1,5 +1,5 @@
 .user-info-card {
-    padding: 50px 0;
+    padding: 50px 20px;
     background:  #cbcbba ;
 }
 
@@ -9,9 +9,8 @@
 }
 .user-info-title {
     color: #24292f;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #282c34;
-    max-width: 250px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
 }
 .user-info-title:last-child {
     margin-bottom: 0;
@@ -27,10 +26,18 @@
     padding: 50px 20px;
 }
 .user-info-rep {
-    /*display: inline-block;*/
-    width: 600px;
     text-decoration: none;
-    border: 1px solid #24292f;
+    border: 1px solid white;
     border-radius: 8px;
     margin-bottom: 20px;
+    transition: .4s linear ;
+}
+.user-info-rep:hover {
+    border: 1px solid #282c34;
+}
+.user-info-sub-card {
+    border: 1px solid white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px;
 }

@@ -47,19 +47,21 @@ const UserInfo = () => {
                         </div>
                     </div>
                     <div className='col-8'>
-                        <div className='user-info-card'>
-                            <div className='user-info-title'><span
-                                className='fw-bold text-uppercase'>Login</span> : {user.login}</div>
-                            <div className='user-info-title'><span
-                                className='fw-bold text-uppercase'>Name</span> : {user.name || user.login}</div>
-                            <div className='user-info-title'><span
-                                className='fw-bold text-uppercase'> Company</span> : {user.company || 'not found'}</div>
-                            <div className='user-info-title'><span
-                                className='fw-bold text-uppercase'>Location</span> : {user.location || 'not found'}
-                            </div>
-                            <div className='user-info-title'><span
-                                className='fw-bold text-uppercase'> Created</span> : {user.created_at?.slice(0, 10)}
-                            </div>
+
+                           <div className='user-info-sub-card'>
+                               <div className='user-info-title'>
+                                   <span className='fw-bold text-uppercase d-inline-block w-25'>Login</span> : {user.login}
+                               </div>
+                               <div className='user-info-title'><span
+                                   className='fw-bold text-uppercase d-inline-block w-25'>Name</span> : {user.name || user.login}</div>
+                               <div className='user-info-title'><span
+                                   className='fw-bold text-uppercase d-inline-block w-25'> Company</span> : {user.company || 'not found'}</div>
+                               <div className='user-info-title'><span
+                                   className='fw-bold text-uppercase d-inline-block w-25'>Location</span> : {user.location || 'not found'}
+                               </div>
+                               <div className='user-info-title'><span
+                                   className='fw-bold text-uppercase d-inline-block w-25'> Created</span> : {user.created_at?.slice(0, 10)}
+                               </div>
                         </div>
 
                     </div>
@@ -70,7 +72,7 @@ const UserInfo = () => {
                         {
                             userRep.map(it => {
                                 return (
-                                    <Link key={it.id} to={`/user-repositories/${name}/${it.name}`} className='text-decoration-none'>
+                                    <Link key={it.id} to={`/user-repositories/${name}/${it.name}`} className='col-6 text-decoration-none'>
                                         <div className='p-3 user-info-rep'>
                                             {it.full_name}
                                         </div>
