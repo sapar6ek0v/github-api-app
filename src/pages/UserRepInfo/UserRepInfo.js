@@ -50,7 +50,7 @@ const UserRepInfo = () => {
 
     return (
         <div className='container'>
-           <Repositories lang={lang} readmeMd={readmeMd} userRepInfo={userRepInfo} />
+           <Repositories readme={readme} lang={lang} readmeMd={readmeMd} userRepInfo={userRepInfo} />
         </div>
     );
 };
