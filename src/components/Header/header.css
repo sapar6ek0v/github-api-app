@@ -1,0 +1,18 @@
+header {
+    background: #24292f;
+}
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header-button {
+    background: #2da44e;
+    border: none;
+    color: #fff1ba;
+    padding: 3px 12px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

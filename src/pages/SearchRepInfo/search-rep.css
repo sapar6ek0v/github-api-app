@@ -1,0 +1,50 @@
+.rep-page {
+    padding: 50px 0 0;
+}
+.rep-card {
+    padding: 20px;
+    background: #cbcbba;
+    margin-bottom: 20px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+    transition: .4s linear;
+}
+.rep-card:hover {
+    box-shadow: 5px 5px 8px lightcyan ;
+}
+.rep-photo-card {
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+.rep-card-img {
+    width: 100px;
+    border-radius: 8px;
+}
+.rep-card-title {
+    color: #47423f;
+    font-size: 18px;
+    font-style: italic;
+    border-bottom: 1px solid #24292f;
+
+}
+.rep-card-sub-title {
+    font-size: 18px;
+    color: #003c95;
+    word-break: break-word;
+    border-bottom: 1px solid #003c95;
+}
+.item-enter {
+    opacity: 0;
+}
+.item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.item-exit {
+    opacity: 1;
+}
+.item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}

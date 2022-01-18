@@ -1,0 +1,38 @@
+.user-rep-page {
+    padding: 50px;
+    background: #cbcbba;
+}
+
+.user-rep-title {
+    color: #003c95;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.user-rep-visibility {
+    border-radius: 8px;
+    padding: 4px 8px;
+    background: white;
+    height: 32px;
+}
+.lang-card {
+    text-decoration: underline;
+    color: #003c95;
+    margin-bottom: 5px;
+}
+.info-card {
+    padding: 20px 0;
+    margin-left: 40px;
+}
+.user-readme {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid lightslategray;
+    padding: 20px;
+    overflow: auto;
+}
+.rep-description {
+    font-style: italic;
+    color: #282c34;
+    margin-bottom: 20px;
+}

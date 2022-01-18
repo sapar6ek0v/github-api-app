@@ -1,0 +1,29 @@
+.user-page {
+    padding: 50px 0;
+}
+.user-page-img {
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+}
+.user-page-card {
+    border-radius: 8px;
+    background:  #cbcbba ;
+    padding: 10px;
+    height: 100%;
+}
+.user-page-link {
+    text-decoration: none;
+    color: #282c34 ;
+    text-align: center;
+}
+.user-page-link:hover{
+    text-decoration: underline;
+}
+.search-user-title {
+    text-align: center;
+    padding: 20px 0;
+    color: #24292f;
+    font-size: 28px;
+    font-style: italic;
+}

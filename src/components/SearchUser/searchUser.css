@@ -1,0 +1,21 @@
+.block-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search-user {
+    height: 60px;
+    width: 400px;
+    color: white;
+    font-size: 20px;
+    background: #24292f ;
+}
+.search-user-page {
+    background: #cbcbba;
+    height: 100vh;
+}
+.search-user-btn {
+    padding: 15px 15px;
+    font-size: 20px;
+}

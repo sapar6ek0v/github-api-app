@@ -1,0 +1,36 @@
+.user-info-card {
+    padding: 50px 0;
+    background:  #cbcbba ;
+}
+
+.user-info-photo {
+    border-radius: 8px;
+    width: 100%;
+}
+.user-info-title {
+    color: #24292f;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #282c34;
+    max-width: 250px;
+}
+.user-info-title:last-child {
+    margin-bottom: 0;
+}
+.user-rep {
+    color: #24292f;
+    border-bottom: 1px solid #282c34;
+    text-transform: uppercase;
+    max-width: 500px;
+}
+.user-rep-card {
+    background:  #cbcbba ;
+    padding: 50px 20px;
+}
+.user-info-rep {
+    /*display: inline-block;*/
+    width: 600px;
+    text-decoration: none;
+    border: 1px solid #24292f;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}

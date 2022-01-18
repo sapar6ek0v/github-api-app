@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import {Route, Routes} from "react-router-dom";
+import Main from "./pages/Main/Main";
+import UsersPage from "./pages/UsersPage/UsersPage";
+import UserInfo from "./pages/UserInfo/UserInfo";
+import UserRepInfo from "./pages/UserRepInfo/UserRepInfo";
+import Header from "./components/Header/Header";
+import SearchUser from "./components/SearchUser/SearchUser";
+import SearchRep from "./components/SearchRep/SearchRep";
+import SearchRepInfo from "./pages/SearchRepInfo/SearchRepInfo";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Header />
+            <Routes>
+                <Route path={'/'} element={<Main/>}/>
+                <Route path={`/search/:name`} element={<UsersPage/>}/>
+                <Route path={`/user-info/:name`} element={<UserInfo/>}/>
+                <Route path={`/user-repositories/:name/:title`} element={<UserRepInfo />} />
+                <Route path={`/search-user`} element={<SearchUser/>} />
+                <Route path={`/search-rep`} element={<SearchRep/>} />
+                <Route path={`/search-rep-info/:repos`} element={<SearchRepInfo/>} />
+            </Routes>
+        </>
+    );
 }
 
 export default App;
